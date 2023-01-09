@@ -1,15 +1,11 @@
-space=$(subst ,, )
-var=$(subst $(space),-,$(POST_TITLE))
-
 build:
-	hugo --destination ./dist
+	hugo -s . -d dist/
 
 post:
-	hugo new posts/$(var)/$(POST_NAME).md -f
-	@mv posts/$(var)/$(POST_NAME).md content/posts/
-	@rm content/posts/$(var)
+	hugo new posts/$(POST_NAME).md
+	sed -i 's/title: .*/title:"$(POST_TITLE)"/' content/posts/$(POST_NAME).md 
 
 clean:
-	rm -r dist/
+	rm -rf dist/
 
 
