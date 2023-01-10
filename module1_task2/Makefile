@@ -9,4 +9,4 @@ clean:	## Cleanup the content of the directory dist/
 	rm -rf dist/
 
 help: Makefile ## Show this help usage
-	@sed -n 's/^##//p' $<
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
