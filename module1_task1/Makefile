@@ -7,5 +7,3 @@ post:
 
 clean:
 	rm -rf dist/
-
-
