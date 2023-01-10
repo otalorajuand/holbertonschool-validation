@@ -8,5 +8,5 @@ post:	## Create a new blog post whose filename and title come from the environme
 clean:	## Cleanup the content of the directory dist/
 	rm -rf dist/
 
-help:	## Show this help usage
+help: Makefile ## Show this help usage
 	@sed -n 's/^##//p' $<
