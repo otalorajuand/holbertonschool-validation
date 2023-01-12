@@ -20,7 +20,7 @@ jobs:
         run: cd module3_task2 && make build
 
       - name: lint
-        run: cd module3_task2 && make lint
+        run: cd module3_task2 && npm install -g markdownlint-cli && make lint
 
       - name: package
         run: cd module3_task2 && make package
