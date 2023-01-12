@@ -20,16 +20,13 @@ jobs:
         run: cd module3_task2 && make build
 
       - name: run unit-tests
-        working-directory: ./holbertonschool-validation/module3_task2
-        run: make unit-tests && make integration-tests
+        run: cd module3_task2 && make unit-tests
 
       - name: run integration-tests
-        working-directory: ./holbertonschool-validation/module3_task2
-        run: make integration-tests
+        run: cd module3_task2 && make integration-tests
 
       - name: run validate
-        working-directory: ./holbertonschool-validation/module3_task2
-        run: make validate
+        run: cd module3_task2 && make validate
 
       - name: lint
         run: cd module3_task2 && npm install -g markdownlint-cli && make lint
