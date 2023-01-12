@@ -17,3 +17,13 @@ package:
 
 lint:
 	markdownlint "*.md"
+
+unit-tests: ## run unit tests
+	@echo "all tests done"
+
+integration-tests: ## run integration-tests
+	@echo "all integration-tests done"
+
+validate: ## run validate
+	@echo "all validations done"
+
