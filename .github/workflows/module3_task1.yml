@@ -13,11 +13,8 @@ jobs:
       - name: cloning
         uses: actions/checkout@v2
 
-      - name: change_route
-        run: cd module3_task1
-
       - name: set_up
-        run: ./setup.sh
+        run: cd module3_task1 && ./setup.sh
 
       - name: build
         run: make build
