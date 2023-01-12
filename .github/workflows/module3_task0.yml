@@ -1,0 +1,16 @@
+name: module3_task0
+
+on:
+  push:
+
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  clone:
+    steps:
+      - name: cloning
+        uses: actions/checkout@v2
+
+      - name: make_help
+        run: make help
