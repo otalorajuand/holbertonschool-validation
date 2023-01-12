@@ -8,6 +8,7 @@ on:
 
 jobs:
   clone:
+    runs-on: ubuntu-latest
     steps:
       - name: cloning
         uses: actions/checkout@v2
