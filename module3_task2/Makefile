@@ -14,3 +14,6 @@ help: Makefile ## Show this help usage
 package:
 	hugo
 	zip awesome-website.zip awesome-api dist/ 
+
+lint:
+	markdownlint "*.md"
