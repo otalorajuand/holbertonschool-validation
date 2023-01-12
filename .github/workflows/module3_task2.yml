@@ -19,5 +19,8 @@ jobs:
       - name: build
         run: cd module3_task2 && make build
 
+      - name: lint
+        run: cd module3_task2 && make lint
+
       - name: package
         run: cd module3_task2 && make package
