@@ -1,11 +1,13 @@
-In this proyect we explor devops.
-## Prerequisites
-GoHugo
+# Prerequisites
+
+this hugo website should be made right now
 
 ## Lifecycle
-build: Generate the website from the markdown and configuration files in the directory dist/
-post: Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME
-clean: Cleanup the content of the directory dist/
-help: Show this help usage
 
-## Build Workflow
+this lfecycle section must be done now
+
+build: A website generator in ./dist directory
+clean: Clean the /dist directory thoroughly
+help: show help
+post: make a post with title = POST_TITLE and name = POST_NAME (environ variables)
+package: make a package
