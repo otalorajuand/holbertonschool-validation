@@ -9,7 +9,7 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  package:
+  tag:
     runs-on: ubuntu-18.04
     steps:
       - name: cloning
