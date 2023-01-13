@@ -10,6 +10,8 @@ on:
     branches:
       - main
 
+
+
 jobs:
   update_release_draft:
     permissions: write-all
