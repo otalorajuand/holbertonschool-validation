@@ -13,7 +13,7 @@ on:
 permissions: read-all
 
 jobs:
-  builds:
+  tags:
     name: jobs
     runs-on: ubuntu-18.04
 
