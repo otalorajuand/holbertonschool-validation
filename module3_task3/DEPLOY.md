@@ -9,4 +9,5 @@ the dict/ directory. Use unzip to unarchive it.
 - You can check that the app is running correctly in the CLI of github.
 
 ## tag
+
 The work flow is triggered when a tag is push. Then a zip file is created.
