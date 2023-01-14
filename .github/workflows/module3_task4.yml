@@ -31,7 +31,7 @@ jobs:
       - run: cd module3_task4 && make clean
       - run: cd module3_task4 && make build
       - run: cd module3_task4 && make post POST_NAME="name" POST_TITLE="title"
-     - run: cd module3_task4 && make lint
+      - run: cd module3_task4 && make lint
       - run: cd module3_task4 && make package
       - run: cd module3_task4 && make unit-tests
       - run: cd module3_task4 && make integration-tests
